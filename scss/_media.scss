@@ -1,0 +1,235 @@
+@media (max-width: 1200px){
+   .menu{
+    &_link{
+        font-size: 13px;
+        padding-right: 19px;
+    }
+   }
+   .subheader{
+       &_header{
+        font-size: 50px;
+       }
+       
+   }
+
+}
+
+@media (max-width: 991px){
+    .menu{
+        &_link{
+            font-size: 10px;
+            padding-right: 9px;
+        }
+       }
+    .logoBlock{
+        &_img{
+            img{
+                width: 100%;
+            }
+        }
+        &_oficial{
+            font-size: 12px;
+        }
+
+        &_phone{
+            &_link{
+                font-size: 20px;
+            }
+        }
+
+        &_btn{
+            font-size: 13px;
+        }
+    }
+
+    .subheader{
+        &_header{
+         font-size: 40px;
+        }
+        &_descr{
+            font-size: 27px;
+        }
+        
+    }
+
+    .advantage{
+        &_item{
+            flex-direction: column;
+            align-items: center;
+            &_icon{
+                margin-bottom: 15px;
+            }
+            &_text{
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .mobile{
+        &_item{
+            &_text{
+                font-size: 20px;
+            }
+        }
+    }
+
+    .choice{
+        &_img{
+            width: 90%;
+        }
+    }
+
+    footer{
+        .footerMenu{
+            &_link_2{
+                a{
+                    margin-left: 11px;
+                }
+                
+            }
+        }
+    }
+
+}
+
+@media (max-width: 767px){
+    header{
+        nav{
+            height: 52px;
+
+            .hamburger{
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                span{
+                    display: block;
+                    width: 30px;
+                    height: 2px;
+                    background-color: #fff;
+                    margin-bottom: 4px;
+                    transition: .5s all;
+                }
+                &_active{
+                    span:first-child{
+                        transform: rotate(45deg);
+                        margin-bottom: -2px;
+                    }
+
+                    span:nth-child(2){
+                        transform: rotate(-45deg);
+                        margin-bottom: -2px;
+                    }
+
+                    span:nth-child(3){
+                        display: none;
+                    }
+                }
+            }
+        }
+        .menu{
+            width: 50%;
+            height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top:0;
+            left: -100%;
+            background-color: rgba(0,0,0, .9);
+            z-index: 1000;
+            padding: 0;
+            transition: .6s all;
+
+            &_active{
+                left: 0;
+            }
+
+            &_item{
+                margin-bottom: 11px;
+                position:relative;
+
+                &:after{
+                    content: "";
+                    width: 50px;
+                    height: 1px;
+                    background-color: #fff;
+                    position: absolute;
+                    bottom: 0;
+                    right: 50%;
+                    transform: translateX(50%);
+                }
+            }
+            &_link{
+                font-size: 19px;
+                border: none;
+            }
+    
+        }
+
+        .subheader{
+            &_header{
+                font-size: 35px;
+            }
+            &_descr{
+                font-size: 22px;
+                margin-top: 0;
+            }
+            &_text{
+                margin-top: 0;
+            }
+            &_btn{
+                margin-top: 100px;
+            }
+        }
+    }
+
+    .logoBlock{
+        &_phone{
+            &_text{
+                display: none;
+            }
+        }
+
+        .mobile_btn{
+            display: inline-block;
+            padding: 10px 15px;
+        }
+
+        .lg_btn{
+            display: none;
+        }
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .footerIcon{
+            width:100%;
+            justify-content: center;
+            order: 2;
+        }
+
+        .footerMenu{
+            width: 100%;
+            order: 1;
+            &_line{
+                display: none;
+            }
+        }
+
+        .footerMenu_lang{
+            display: none;
+        }
+
+        .footerApp{
+            width: 100%;
+            order: 3;
+        }
+    }
+
+}
+
