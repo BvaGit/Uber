@@ -378,3 +378,4 @@
 [1226/215709.159:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffd94515978 of 48 bytes failed: Запрос ReadProcessMemory или WriteProcessMemory был выполнен только частично. (0x12B)
 [1226/215709.159:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffd9451b4c0 of 64 bytes failed: Запрос ReadProcessMemory или WriteProcessMemory был выполнен только частично. (0x12B)
 [1226/215709.163:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Попытка доступа к процессу, выполняющему процедуру завершения. (0xc000010a)
+[0104/212329.858:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)

@@ -413,6 +413,9 @@ footer .footerApp {
   footer .footerMenu_link_2 a {
     margin-left: 11px;
   }
+  footer .footerApp img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -515,6 +518,9 @@ footer .footerApp {
   .logoBlock .lg_btn {
     display: none;
   }
+  .requist .warning .requist_title {
+    margin-top: 30px;
+  }
   footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -535,6 +541,7 @@ footer .footerApp {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    margin: 15px 0;
   }
   footer .footerMenu {
     width: 100%;
@@ -550,9 +557,18 @@ footer .footerApp {
   }
   footer .footerApp {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+  footer .footerApp img {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=styleSCSS.css.map */

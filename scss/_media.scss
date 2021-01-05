@@ -90,6 +90,12 @@
                 
             }
         }
+
+        .footerApp{
+            img{
+                width: 100%;
+            }
+        }
     }
 
 }
@@ -203,6 +209,15 @@
         }
     }
 
+    .requist{
+        .warning{
+            .requist_title{
+                margin-top: 30px;
+            }
+        }
+ 
+    }
+
     footer{
         flex-direction: column;
         align-items: center;
@@ -211,6 +226,7 @@
             width:100%;
             justify-content: center;
             order: 2;
+            margin: 15px 0;
         }
 
         .footerMenu{
@@ -227,7 +243,12 @@
 
         .footerApp{
             width: 100%;
+            display: flex;
+            justify-content: center;
             order: 3;
+            img{
+                width: 50%;
+            }
         }
     }
 
